@@ -35,7 +35,7 @@ class CreateSpell extends Component {
     };
 
     console.log(tempSpell); //eventually we submit from here.
-    axios.post('http://localhost:5000/spells/add', tempSpell)
+    axios.post('/spells/add', tempSpell)
       .then(res => console.log(res.data));
 
     window.location = "/";
